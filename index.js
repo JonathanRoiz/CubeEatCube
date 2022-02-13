@@ -184,6 +184,6 @@ setInterval(function() {
   io.emit('updatepos',players,points,walls);
 },7);
 
-http.listen(3003, () => {
+http.listen(process.env.PORT || 80, () => {
   console.log('listening on *:3003');
 });
