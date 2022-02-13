@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplayer Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <center>
+	<div id="divId">
+    <h1>Cube Eat Cube</h1>
+		<input autocomplete="off" placeholder="Username" maxlength="10" id="entered" class="elements"></input>
+    <br>
+    <br>
+    <button id="button" class="elements" onclick="play()">Play</button>
+  </div>
+  </center>
+  <canvas id="myCanvas"></canvas>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src='script.js'></script>
+  </body>
+</html>

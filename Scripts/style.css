@@ -1,0 +1,68 @@
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+canvas {
+  background-color: rgba(158, 167, 184);
+  width: 100%;
+}
+
+div {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.elements {
+  position: relative;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input {
+  border: 0px;
+  padding-left: 10px;
+  outline-width: 0px;
+  border-radius: 10px;
+  font-size: 8vw;
+  text-align: center;
+}
+
+#button {
+  margin-top: 2vh;
+  border-width: 0px;
+  font-size: 10vw;
+  border-radius: 8px;
+  width: 50vw;
+  outline-width: 0px;
+  height: 13vw;
+  color: white;
+  background-color: rgb(0, 200, 0);
+}
+
+@keyframes example {
+  0%   {font-size: 10vw; color: black;}
+  50%  {font-size: 12.9vw; color: red;}
+  100% {font-size: 10vw; color: black;}
+}
+
+h1 {
+  font-size: 10vw;
+  animation-name: example;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
